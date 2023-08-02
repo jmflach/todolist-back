@@ -1,4 +1,5 @@
-const tasksModel = require('../models/tasksModel')
+// const tasksModel = require('../models/tasksModelMysql')
+const tasksModel = require('../models/tasksModelMongo')
 
 const getAll = async (request, response) => {
     const tasks = await tasksModel.getAll();
